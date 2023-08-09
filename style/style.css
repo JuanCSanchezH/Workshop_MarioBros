@@ -36,6 +36,7 @@ form{
 }
 .campo {
  justify-content: space-around;
+ 
 }
 .form-label{
  font-size: 1.5rem;
@@ -76,6 +77,6 @@ form{
  color: white;
 }
 
-.img_bala {
+/* .img_bala {
  width: 70px;
-}
+} */
