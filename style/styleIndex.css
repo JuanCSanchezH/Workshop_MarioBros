@@ -1,0 +1,147 @@
+body{
+    background-image: url("https://3.bp.blogspot.com/-f7yq2JlXJso/V-nHd2d2LBI/AAAAAAAAAlY/yBdzK0Td1f0PNoWF6PH_CR4kqPlBHg6cQCLcB/s1600/10370.jpg");
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1C80DE;
+}
+
+.header_img {
+    width: 300px;
+    margin: 0px 30px;
+}
+
+.btn_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 100px;
+    padding: 20px;
+    text-align: center;
+}
+.h2_header {
+    padding: 0px 50px;
+}
+
+.img_star {
+    width: 100px;
+}
+.img_hongo {
+    width: 60px;
+    height: 70px;
+    text-decoration: none;
+    background-color: transparent;
+}
+.bueno {
+    width: 70px;
+    height: 70px;
+}
+
+.btn_hongo {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+.btn_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 50px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    width: 250px;
+}
+
+.a_hongomalo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.a_hongomalo:hover {
+    color: rgb(8, 218, 255);
+}
+
+.modal-body{
+    background-image: url("https://3.bp.blogspot.com/-f7yq2JlXJso/V-nHd2d2LBI/AAAAAAAAAlY/yBdzK0Td1f0PNoWF6PH_CR4kqPlBHg6cQCLcB/s1600/10370.jpg");
+    background-size: 920px;
+}
+
+.btn-bullet{
+    border: none;
+}
+
+.grid-elementos {
+    margin: 0px 50px;
+    padding: 10px 50px;
+    justify-content: center;
+}
+
+.elementos {
+    width: 20%;
+    background-color: #023a68;
+    border: none;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.card {
+    border: none;
+}
+
+.card-img {
+    border-radius: 16px;
+    border: none;
+    margin-bottom: 15px;
+    padding: 50px;
+    width: 100%;
+    
+}
+
+.card-title {
+    color: white;
+    margin-top: 115%;
+}
+
+.card-text {
+    color: #CDCDCD;
+}
+
+
+.bg-dark {
+    background-color: rgba(33, 37, 41, 0) !important;
+}
+
+.titulo {
+    padding-right: 40px;
+}
+
+.columna1, .columna2 {
+    margin-left: 165px;
+    margin-right: 135px;
+    width: 324px !important;
+}
