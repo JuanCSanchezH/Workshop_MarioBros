@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
     
     <link rel="stylesheet" href="style/styleIndex.css">
-    <!-- <link rel="stylesheet" href="style/style.css"> -->
     <title>SuperMario Bros</title>
 </head>
 
@@ -36,96 +35,64 @@
 
             <div class="sub_btn">
                 <button id="btnCategory2" class="btn_hongo d-flex">
-                    <img src="https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937019/hongo_qncfq3.png" class="img_hongo bueno">
+                    <img src="https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937028/flor_wx0ztq.png" class="img_hongo bueno">
                     <p>Ocultar personajes!</p>
                 </button>
             </div>
             
             <div class="sub_btn">
-                    <a href="./formulario.html" class="a_hongomalo">
-                        <img src="https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937019/hongomalo_iiy1ek.png" class="img_hongo">
-                    <p>Regístrate!</p>
+                    <a href="#" class="a_hongomalo" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937019/hongomalo_iiy1ek.png" class="img_hongo" >
+                    <p>Registra!</p>
                     </a>
             </div>
-
-            <!-- <div class="sub_btn">
-                <a href="https://crudmariobros.herokuapp.com/mariobros" class="a_hongomalo">
-                    <img src="https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937028/flor_wx0ztq.png" class="img_hongo">
-                <p>Ir a la API!</p>
-                </a>
-            </div> -->
         </div>
-
-        <!-- BUTTON TRIGGER MODAL -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-        </button>
         
         <!-- MODAL -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
                 <div class="modal-body">
                     <!-- FORMULARIO DE REGISTRO DE PJs -->
-                    <div class="div-usuario">
+                    <div class="usuario">
                         <!-- contenedor para ver los datos -->
-                        <div class="row usuario">
-                            <h1 class="Headline1">Registrate Para Más Información</h1>
+                        <div class="row usuario__div">
+                            <h1 class="usuario__div__h1">¡Registra un personaje!</h1>
                         </div>
                         <!-- formulario -->
-                        <form id="formulario">
-                            <div class="campo">
-                                <label for="name" class="form-label body1Regular label-edit">Nombre: </label>
-                                <input id="name" name="name" class="ms-1 edit body1Regular form-control" type="text"
+                        <form id="formulario" onsubmit="createItem()">
+                            <div class="formulario__campo">
+                                <label for="name" class="form-label label-edit">Nombre: </label>
+                                <input id="name" name="name" class="ms-1 edit formulario__campo__input form-control" type="text"
                                     placeholder="Nombre" required>
                             </div>
-                            <div class="campo">
-                                <label for="lastName" class="form-label body1Regular label-edit">Apellido: </label>
-                                <input id="lastName" name="lastName" class="ms-1 edit body1Regular form-control" type="text"
-                                    placeholder="Apellido" required>
+                            <div class="formulario__campo">
+                                <label for="genero" class="form-label label-edit">Genero: </label>
+                                <input id="genero" name="genero" class="ms-1 edit formulario__campo__input form-control" type="text"
+                                    placeholder="Genero" required>
                             </div>
                 
-                            <div class="campo">
-                                <label for="email" class="form-label body1Regular label-edit">Correo: </label>
-                                <input id="email" name="email" class="ms-1 edit body1Regular form-control" type="text"
-                                    placeholder="Correo" required>
+                            <div class="formulario__campo">
+                                <label for="img" class="form-label label-edit">Img: </label>
+                                <input id="img" name="img" class="ms-1 edit formulario__campo__input form-control" type="text"
+                                    placeholder="Imagen (link)" required>
                             </div>
                 
-                            <div class="campo">
-                                <label id="label-edit" for="id" class="form-label body1Regular label-edit">Id</label>
-                                <input id="id" name="id" class="ms-1 edit body1Regular form-control" type="text" placeholder="Id"
-                                    readonly>
+                            <div class="formulario__campo">
+                                <input id="id" name="id" class="ms-1 edit formulario__campo__input form-control" type="text" placeholder="Id"
+                                    hidden>
                             </div>
-                            <!-- botones -->
-                            <div class="conteBotones">
-                
-                                <button id="btnGuardar" type="submit" class="btn btn-secondary buttom guardar-cambios">Guardar</button>
-                
-                                <button id="btnCorreo" type="button" class="btn btn-secondary buttom guardar-cambios">Buscar por
-                                    correo</button>
-                
-                
-                                <button id="btnEditar" type="button" class="btn btn-secondary buttom guardar-cambios">Editar</button>
-                
-                
-                                <button id="btnEliminar" type="button"
-                                    class="btn btn-secondary buttom guardar-cambios">Eliminar</button>
-                
+                            <div class="row rowSubmit">
+                                <button type="submit" class="btn btn-success rowSubmit__btn">Guardar</button>
+                            </div>
+                            <div class="row rowSubmit">
+                                <button type="button" class="btn btn-success rowSubmit__btn" id="btnEditar" onclick="editElement()">Editar</button>
                             </div>
                         </form>
-                
-                        <br><br>
-                
-                        <a class="atras" href="./index.html"><p>Volver!</p> </a>
                     </div>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btnBullet" data-bs-dismiss="modal"><img src="https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937019/bala_perymi.png" alt="" class="btnBullet__img"></button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="modal-footer__btnBullet" data-bs-dismiss="modal"><img src="https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937019/bala_perymi.png" alt="" class="modal-footer__btnBullet__img"></button>
                 </div>
             </div>
             </div>

@@ -1,61 +1,46 @@
 {
-    "mariobros": [
-      {
-        "id": 1,
-        "name": "Mario",
-        "genero": "Masculino",
-        "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937030/mario_vsxigm.png"
-      },
-      {
-        "id": 2,
-        "name": "Luigi",
-        "genero": "Masculino",
-        "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937022/luigi_zkf7j0.png"
-      },
-      {
-        "id": 3,
-        "name": "Princesa Peach",
-        "genero": "Femenino",
-        "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937030/princesa_yk2zd3.png"
-      },
-      {
-        "id": 4,
-        "name": "Bowser",
-        "genero": "Masculino",
-        "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937032/bowser_wiryyc.png"
-      },
-      {
-        "id": 5,
-        "name": "Yoshi",
-        "genero": "Masculino",
-        "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937032/yoshi_hqz45b.png"
-      },
-      {
-        "id": 6,
-        "name": "Toad",
-        "genero": "Masculino",
-        "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937022/toad_rphkez.png"
-      },
-      {
-        "id": 7,
-        "name": "Princesa Rosalina",
-        "genero": "Femenino",
-        "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937019/rosalina_jpvbzq.png"
-      }
-    ],
-    "usuarios": [
-      {
-        "id": 1,
-        "nombre": "Pepito Modificado",
-        "apellido": "PerezEditado",
-        "correo": "pepito@gmail.com"
-      },
-      {
-        "nombre": "Patico",
-        "apellido": "Torres",
-        "correo": "sara@gmail.com",
-        "id": 2
-      }
-    ]
+  "mariobros": [
+    {
+      "name": "Mario",
+      "genero": "Masculino",
+      "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937030/mario_vsxigm.png",
+      "id": 1
+    },
+    {
+      "name": "Luigi",
+      "genero": "Masculino",
+      "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937022/luigi_zkf7j0.png",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Princesa Peach",
+      "genero": "Femenino",
+      "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937030/princesa_yk2zd3.png"
+    },
+    {
+      "id": 4,
+      "name": "Bowser",
+      "genero": "Masculino",
+      "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937032/bowser_wiryyc.png"
+    },
+    {
+      "id": 5,
+      "name": "Yoshi",
+      "genero": "Masculino",
+      "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937032/yoshi_hqz45b.png"
+    },
+    {
+      "id": 6,
+      "name": "Toad",
+      "genero": "Masculino",
+      "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937022/toad_rphkez.png"
+    },
+    {
+      "id": 7,
+      "name": "Princesa Rosalina",
+      "genero": "Femenino",
+      "img": "https://res.cloudinary.com/dsf9zduuk/image/upload/v1690937019/rosalina_jpvbzq.png"
+    }
+  ]
 }
-  
