@@ -2,6 +2,8 @@ import { createPj, getPj, savePj, deletePj } from "./crud.js";
 
 let showItems = document.querySelector('.grid-elementos');
 const formulario = document.getElementById('formulario');
+const btnGuardar = document.getElementById('btnGuardar');
+const btnEditar = document.getElementById('btnEditar');
 let ID = "";
 
 // LISTAR (MOSTRAR) PERSONAJES
@@ -32,7 +34,7 @@ export const getElements = async () => {
 }
 
 // CREAR PERSONAJE
-window.createItem = async function createItem(){
+async function createItem(){
     const name = document.getElementById('name').value;
     const genero = document.getElementById('genero').value;
     const img = document.getElementById('img').value;
@@ -51,6 +53,9 @@ formulario.addEventListener('submit', async ()=> {
 
 // EDITAR PERSONAJE
 window.searchElement = async function searchElement(CharId) {
+    btnGuardar.style.display = 'none';
+    btnEditar.style.display = 'block';
+
     const Elements = await getPj();
     const Element = Elements.find(p => p.id === CharId);
     if (Element) {
